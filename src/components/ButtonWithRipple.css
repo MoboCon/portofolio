@@ -1,0 +1,30 @@
+.ripple-button {
+    position: relative;
+    overflow: hidden;
+    background: #01bf71;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .ripple-button::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    width: 300%;
+    height: 300%;
+    left: -50%;
+    top: -50%;
+    transform: scale(0);
+    transition: transform 0.5s, opacity 1s;
+    opacity: 0;
+  }
+  
+  .ripple-button:focus::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+  

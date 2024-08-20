@@ -1,0 +1,27 @@
+@keyframes buttonHover {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .animated-button {
+    background-color: #01bf71;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+  
+  .animated-button:hover {
+    background-color: #019e55;
+    animation: buttonHover 0.6s ease;
+  }
+  
